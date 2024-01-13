@@ -1,0 +1,18 @@
+version: '3.3'
+services:
+  mysql-container:
+    image: mysql:8
+    environment:
+      MYSQL_ROOT_PASSWORD: root1
+      MYSQL_DATABASE: java_projects
+    ports:
+      - 3307:3306
+    restart: always
+  springboot-container:
+    build: ./JPA/   
+    depends_on:
+      - mysql-container
+    ports:
+      - 9191:9191
+    restart: always
+     
