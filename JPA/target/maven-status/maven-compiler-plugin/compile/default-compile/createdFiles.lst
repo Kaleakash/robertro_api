@@ -1,0 +1,5 @@
+com\simplilearn\spring\repository\UserRepository.class
+com\simplilearn\spring\Simplilearn01SpringJdbcApplication.class
+com\simplilearn\spring\jpa\User.class
+com\simplilearn\spring\service\UserService.class
+com\simplilearn\spring\controller\UserController.class
